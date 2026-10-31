@@ -214,7 +214,7 @@ const liveApi = {
   },
 };
 runBtn.onclick = async () => {
-  runBtn.disabled = true; $('#live-note').textContent = '';
+  runBtn.disabled = true; $('#live-note').textContent = ''; $('#result').hidden = true;
   const labels = ['Uploading the photo', 'Skin Analysis', 'Facial Color Tones', 'Makeup Virtual Try-On', 'Skin Analysis on the render', 'Checking and re-rendering if needed', 'One-size preset for comparison'];
   showProgress('Running live', labels);
   let i = 0; mark(0, 'on');
