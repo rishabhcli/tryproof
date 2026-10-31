@@ -138,7 +138,7 @@ function render(r, { base }) {
   $('#c-proof').replaceChildren(
     el('h2', {}, '3. Try-on, scored again'),
     el('p', { class: 'muted' }, 'Drag the photo to compare. The scores come from running Skin Analysis on the rendered image, so they describe how the render reads to the model, not a clinical result.'),
-    tabsBox, stage, tableBox, callouts,
+    tabsBox, stage, tableBox, ...callouts,
     el('p', { class: 'muted' }, `${sum.improved} of 8 concerns improved, ${sum.worse} read worse.`));
 
   // 4. shelf
