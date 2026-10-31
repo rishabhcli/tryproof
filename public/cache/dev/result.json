@@ -1,0 +1,506 @@
+{
+ "id": "dev",
+ "name": "Dev",
+ "blurb": "Oily skin and rough texture",
+ "synthetic": true,
+ "created": "2026-10-31T02:19:16.846Z",
+ "before": {
+  "scores": {
+   "oiliness": {
+    "ui_score": 59,
+    "raw_score": 29.990222930908203
+   },
+   "texture": {
+    "ui_score": 52,
+    "raw_score": 13.909529149532318
+   },
+   "redness": {
+    "ui_score": 99,
+    "raw_score": 100
+   },
+   "pore": {
+    "ui_score": 75,
+    "raw_score": 66.45246851444244
+   },
+   "radiance": {
+    "ui_score": 67,
+    "raw_score": 49.07982647418976
+   },
+   "dark_circle_v2": {
+    "ui_score": 67,
+    "raw_score": 54.13660109043121
+   },
+   "acne": {
+    "ui_score": 72,
+    "raw_score": 60.77426
+   },
+   "age_spot": {
+    "ui_score": 73,
+    "raw_score": 75.61944580078125
+   }
+  }
+ },
+ "tone": {
+  "eye_color": "#291f1d",
+  "eye_color_name": "Brown",
+  "lip_color": "#b5797a",
+  "eyebrow_color": "#3e3834",
+  "skin_color": "#78543d",
+  "hair_color": "#FAF0BE",
+  "hair_color_name": "Blonde"
+ },
+ "rx0": {
+  "skin": "#78543d",
+  "concealerShade": "#866550",
+  "levers": {
+   "smooth": 73,
+   "coverage": 57,
+   "glow": 0,
+   "underEye": 58
+  },
+  "finish": "matte",
+  "reasons": [
+   {
+    "lever": "smooth",
+    "concerns": [
+     "texture",
+     "pore"
+    ],
+    "text": "Texture 52 and pores 75 set smoothing to 73."
+   },
+   {
+    "lever": "coverage",
+    "concerns": [
+     "redness",
+     "acne",
+     "age_spot"
+    ],
+    "text": "Weakest of redness 99, blemishes 72, spots 73 sets coverage to 57."
+   },
+   {
+    "lever": "underEye",
+    "concerns": [
+     "dark_circle_v2"
+    ],
+    "text": "Dark circles 67 sets under-eye concealer to 58."
+   },
+   {
+    "lever": "glow",
+    "concerns": [
+     "radiance",
+     "oiliness"
+    ],
+    "text": "Oiliness 59 is high, so glow is held at 0 for a matte finish."
+   }
+  ]
+ },
+ "rounds": [
+  {
+   "n": 1,
+   "rx": {
+    "skin": "#78543d",
+    "concealerShade": "#866550",
+    "levers": {
+     "smooth": 73,
+     "coverage": 57,
+     "glow": 0,
+     "underEye": 58
+    },
+    "finish": "matte",
+    "reasons": [
+     {
+      "lever": "smooth",
+      "concerns": [
+       "texture",
+       "pore"
+      ],
+      "text": "Texture 52 and pores 75 set smoothing to 73."
+     },
+     {
+      "lever": "coverage",
+      "concerns": [
+       "redness",
+       "acne",
+       "age_spot"
+      ],
+      "text": "Weakest of redness 99, blemishes 72, spots 73 sets coverage to 57."
+     },
+     {
+      "lever": "underEye",
+      "concerns": [
+       "dark_circle_v2"
+      ],
+      "text": "Dark circles 67 sets under-eye concealer to 58."
+     },
+     {
+      "lever": "glow",
+      "concerns": [
+       "radiance",
+       "oiliness"
+      ],
+      "text": "Oiliness 59 is high, so glow is held at 0 for a matte finish."
+     }
+    ]
+   },
+   "image": "cache/dev/render0.jpg",
+   "scores": {
+    "pore": {
+     "ui_score": 63,
+     "raw_score": 39.40444552898407
+    },
+    "texture": {
+     "ui_score": 64,
+     "raw_score": 42.785486578941345
+    },
+    "redness": {
+     "ui_score": 99,
+     "raw_score": 100
+    },
+    "oiliness": {
+     "ui_score": 62,
+     "raw_score": 37.349849700927734
+    },
+    "radiance": {
+     "ui_score": 84,
+     "raw_score": 86.78230047225952
+    },
+    "age_spot": {
+     "ui_score": 91,
+     "raw_score": 95.81683349609375
+    },
+    "acne": {
+     "ui_score": 78,
+     "raw_score": 74.73008
+    },
+    "dark_circle_v2": {
+     "ui_score": 68,
+     "raw_score": 58.14465284347534
+    }
+   },
+   "deltas": {
+    "redness": {
+     "before": 99,
+     "after": 99,
+     "delta": 0
+    },
+    "acne": {
+     "before": 72,
+     "after": 78,
+     "delta": 6
+    },
+    "dark_circle_v2": {
+     "before": 67,
+     "after": 68,
+     "delta": 1
+    },
+    "texture": {
+     "before": 52,
+     "after": 64,
+     "delta": 12
+    },
+    "pore": {
+     "before": 75,
+     "after": 63,
+     "delta": -12
+    },
+    "radiance": {
+     "before": 67,
+     "after": 84,
+     "delta": 17
+    },
+    "oiliness": {
+     "before": 59,
+     "after": 62,
+     "delta": 3
+    },
+    "age_spot": {
+     "before": 73,
+     "after": 91,
+     "delta": 18
+    }
+   },
+   "summary": {
+    "improved": 6,
+    "worse": 1,
+    "mean": 5.6
+   },
+   "objective": 33,
+   "changes": [
+    {
+     "lever": "smooth",
+     "from": 73,
+     "to": 48,
+     "concern": "pore",
+     "gain": -12,
+     "after": 63,
+     "kind": "back_off"
+    },
+    {
+     "lever": "underEye",
+     "from": 58,
+     "to": 83,
+     "concern": "dark_circle_v2",
+     "gain": 1,
+     "after": 68,
+     "kind": "strengthen"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "rx": {
+    "skin": "#78543d",
+    "concealerShade": "#866550",
+    "levers": {
+     "smooth": 48,
+     "coverage": 57,
+     "glow": 0,
+     "underEye": 83
+    },
+    "finish": "matte",
+    "reasons": [
+     {
+      "lever": "smooth",
+      "concerns": [
+       "texture",
+       "pore"
+      ],
+      "text": "Texture 52 and pores 75 set smoothing to 73."
+     },
+     {
+      "lever": "coverage",
+      "concerns": [
+       "redness",
+       "acne",
+       "age_spot"
+      ],
+      "text": "Weakest of redness 99, blemishes 72, spots 73 sets coverage to 57."
+     },
+     {
+      "lever": "underEye",
+      "concerns": [
+       "dark_circle_v2"
+      ],
+      "text": "Dark circles 67 sets under-eye concealer to 58."
+     },
+     {
+      "lever": "glow",
+      "concerns": [
+       "radiance",
+       "oiliness"
+      ],
+      "text": "Oiliness 59 is high, so glow is held at 0 for a matte finish."
+     }
+    ]
+   },
+   "image": "cache/dev/render1.jpg",
+   "scores": {
+    "redness": {
+     "ui_score": 99,
+     "raw_score": 100
+    },
+    "radiance": {
+     "ui_score": 83,
+     "raw_score": 84.54287648200989
+    },
+    "pore": {
+     "ui_score": 69,
+     "raw_score": 53.89010405540466
+    },
+    "oiliness": {
+     "ui_score": 62,
+     "raw_score": 38.358482360839844
+    },
+    "dark_circle_v2": {
+     "ui_score": 68,
+     "raw_score": 56.89173340797424
+    },
+    "texture": {
+     "ui_score": 60,
+     "raw_score": 32.24610090255737
+    },
+    "age_spot": {
+     "ui_score": 89,
+     "raw_score": 94.63658905029297
+    },
+    "acne": {
+     "ui_score": 77,
+     "raw_score": 70.84227999999999
+    }
+   },
+   "deltas": {
+    "redness": {
+     "before": 99,
+     "after": 99,
+     "delta": 0
+    },
+    "acne": {
+     "before": 72,
+     "after": 77,
+     "delta": 5
+    },
+    "dark_circle_v2": {
+     "before": 67,
+     "after": 68,
+     "delta": 1
+    },
+    "texture": {
+     "before": 52,
+     "after": 60,
+     "delta": 8
+    },
+    "pore": {
+     "before": 75,
+     "after": 69,
+     "delta": -6
+    },
+    "radiance": {
+     "before": 67,
+     "after": 83,
+     "delta": 16
+    },
+    "oiliness": {
+     "before": 59,
+     "after": 62,
+     "delta": 3
+    },
+    "age_spot": {
+     "before": 73,
+     "after": 89,
+     "delta": 16
+    }
+   },
+   "summary": {
+    "improved": 6,
+    "worse": 1,
+    "mean": 5.4
+   },
+   "objective": 37
+  }
+ ],
+ "chosen": 2,
+ "generic": {
+  "rx": {
+   "skin": "#78543d",
+   "concealerShade": "#866550",
+   "levers": {
+    "smooth": 50,
+    "coverage": 50,
+    "glow": 20,
+    "underEye": 50
+   },
+   "finish": "generic preset",
+   "reasons": []
+  },
+  "image": "cache/dev/render2.jpg",
+  "scores": {
+   "pore": {
+    "ui_score": 70,
+    "raw_score": 56.181713819503784
+   },
+   "radiance": {
+    "ui_score": 83,
+    "raw_score": 84.78832840919495
+   },
+   "oiliness": {
+    "ui_score": 64,
+    "raw_score": 41.573211669921875
+   },
+   "redness": {
+    "ui_score": 99,
+    "raw_score": 100
+   },
+   "texture": {
+    "ui_score": 65,
+    "raw_score": 44.31584179401398
+   },
+   "dark_circle_v2": {
+    "ui_score": 68,
+    "raw_score": 56.99567198753357
+   },
+   "age_spot": {
+    "ui_score": 87,
+    "raw_score": 93.83609008789062
+   },
+   "acne": {
+    "ui_score": 78,
+    "raw_score": 73.84172
+   }
+  },
+  "deltas": {
+   "redness": {
+    "before": 99,
+    "after": 99,
+    "delta": 0
+   },
+   "acne": {
+    "before": 72,
+    "after": 78,
+    "delta": 6
+   },
+   "dark_circle_v2": {
+    "before": 67,
+    "after": 68,
+    "delta": 1
+   },
+   "texture": {
+    "before": 52,
+    "after": 65,
+    "delta": 13
+   },
+   "pore": {
+    "before": 75,
+    "after": 70,
+    "delta": -5
+   },
+   "radiance": {
+    "before": 67,
+    "after": 83,
+    "delta": 16
+   },
+   "oiliness": {
+    "before": 59,
+    "after": 64,
+    "delta": 5
+   },
+   "age_spot": {
+    "before": 73,
+    "after": 87,
+    "delta": 14
+   }
+  },
+  "summary": {
+   "improved": 6,
+   "worse": 1,
+   "mean": 6.3
+  },
+  "objective": 45
+ },
+ "calls": [
+  {
+   "task": "tryOn",
+   "units": 1
+  },
+  {
+   "task": "analyze",
+   "units": 12
+  },
+  {
+   "task": "tryOn",
+   "units": 1
+  },
+  {
+   "task": "analyze",
+   "units": 12
+  },
+  {
+   "task": "tryOn",
+   "units": 1
+  },
+  {
+   "task": "analyze",
+   "units": 12
+  }
+ ],
+ "units": 39
+}

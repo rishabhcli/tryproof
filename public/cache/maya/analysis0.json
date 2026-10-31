@@ -1,0 +1,34 @@
+{
+ "pore": {
+  "ui_score": 69,
+  "raw_score": 54.50265634059906
+ },
+ "redness": {
+  "ui_score": 62,
+  "raw_score": 36.714996337890625
+ },
+ "oiliness": {
+  "ui_score": 69,
+  "raw_score": 53.95240783691406
+ },
+ "texture": {
+  "ui_score": 68,
+  "raw_score": 51.38466954231262
+ },
+ "radiance": {
+  "ui_score": 71,
+  "raw_score": 57.72682428359985
+ },
+ "age_spot": {
+  "ui_score": 68,
+  "raw_score": 65.06864929199219
+ },
+ "dark_circle_v2": {
+  "ui_score": 68,
+  "raw_score": 56.801143288612366
+ },
+ "acne": {
+  "ui_score": 77,
+  "raw_score": 72.14576
+ }
+}

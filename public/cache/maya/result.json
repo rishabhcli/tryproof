@@ -1,0 +1,348 @@
+{
+ "id": "maya",
+ "name": "Maya",
+ "blurb": "Redness and blemishes",
+ "synthetic": true,
+ "created": "2026-10-31T02:15:48.928Z",
+ "before": {
+  "scores": {
+   "pore": {
+    "ui_score": 69,
+    "raw_score": 54.50265634059906
+   },
+   "redness": {
+    "ui_score": 62,
+    "raw_score": 36.714996337890625
+   },
+   "oiliness": {
+    "ui_score": 69,
+    "raw_score": 53.95240783691406
+   },
+   "texture": {
+    "ui_score": 68,
+    "raw_score": 51.38466954231262
+   },
+   "radiance": {
+    "ui_score": 71,
+    "raw_score": 57.72682428359985
+   },
+   "age_spot": {
+    "ui_score": 68,
+    "raw_score": 65.06864929199219
+   },
+   "dark_circle_v2": {
+    "ui_score": 68,
+    "raw_score": 56.801143288612366
+   },
+   "acne": {
+    "ui_score": 77,
+    "raw_score": 72.14576
+   }
+  }
+ },
+ "tone": {
+  "eye_color": "#514437",
+  "eye_color_name": "Brown",
+  "lip_color": "#b46a6d",
+  "eyebrow_color": "#5b575a",
+  "skin_color": "#bd9d86",
+  "hair_color": "#B56637",
+  "hair_color_name": "Auburn"
+ },
+ "rx0": {
+  "skin": "#bd9d86",
+  "concealerShade": "#c4a792",
+  "levers": {
+   "smooth": 54,
+   "coverage": 68,
+   "glow": 0,
+   "underEye": 56
+  },
+  "finish": "matte",
+  "reasons": [
+   {
+    "lever": "smooth",
+    "concerns": [
+     "texture",
+     "pore"
+    ],
+    "text": "Texture 68 and pores 69 set smoothing to 54."
+   },
+   {
+    "lever": "coverage",
+    "concerns": [
+     "redness",
+     "acne",
+     "age_spot"
+    ],
+    "text": "Weakest of redness 62, blemishes 77, spots 68 sets coverage to 68."
+   },
+   {
+    "lever": "underEye",
+    "concerns": [
+     "dark_circle_v2"
+    ],
+    "text": "Dark circles 68 sets under-eye concealer to 56."
+   },
+   {
+    "lever": "glow",
+    "concerns": [
+     "radiance",
+     "oiliness"
+    ],
+    "text": "Oiliness 69 is high, so glow is held at 0 for a matte finish."
+   }
+  ]
+ },
+ "rounds": [
+  {
+   "n": 1,
+   "rx": {
+    "skin": "#bd9d86",
+    "concealerShade": "#c4a792",
+    "levers": {
+     "smooth": 54,
+     "coverage": 68,
+     "glow": 0,
+     "underEye": 56
+    },
+    "finish": "matte",
+    "reasons": [
+     {
+      "lever": "smooth",
+      "concerns": [
+       "texture",
+       "pore"
+      ],
+      "text": "Texture 68 and pores 69 set smoothing to 54."
+     },
+     {
+      "lever": "coverage",
+      "concerns": [
+       "redness",
+       "acne",
+       "age_spot"
+      ],
+      "text": "Weakest of redness 62, blemishes 77, spots 68 sets coverage to 68."
+     },
+     {
+      "lever": "underEye",
+      "concerns": [
+       "dark_circle_v2"
+      ],
+      "text": "Dark circles 68 sets under-eye concealer to 56."
+     },
+     {
+      "lever": "glow",
+      "concerns": [
+       "radiance",
+       "oiliness"
+      ],
+      "text": "Oiliness 69 is high, so glow is held at 0 for a matte finish."
+     }
+    ]
+   },
+   "image": "cache/maya/render0.jpg",
+   "scores": {
+    "pore": {
+     "ui_score": 78,
+     "raw_score": 73.8700168132782
+    },
+    "oiliness": {
+     "ui_score": 75,
+     "raw_score": 67.44495391845703
+    },
+    "redness": {
+     "ui_score": 66,
+     "raw_score": 46.86247634887695
+    },
+    "radiance": {
+     "ui_score": 94,
+     "raw_score": 96.07411026954651
+    },
+    "texture": {
+     "ui_score": 93,
+     "raw_score": 96.06776833534241
+    },
+    "dark_circle_v2": {
+     "ui_score": 74,
+     "raw_score": 72.94979989528656
+    },
+    "age_spot": {
+     "ui_score": 90,
+     "raw_score": 95.26518249511719
+    },
+    "acne": {
+     "ui_score": 80,
+     "raw_score": 79.24272
+    }
+   },
+   "deltas": {
+    "redness": {
+     "before": 62,
+     "after": 66,
+     "delta": 4
+    },
+    "acne": {
+     "before": 77,
+     "after": 80,
+     "delta": 3
+    },
+    "dark_circle_v2": {
+     "before": 68,
+     "after": 74,
+     "delta": 6
+    },
+    "texture": {
+     "before": 68,
+     "after": 93,
+     "delta": 25
+    },
+    "pore": {
+     "before": 69,
+     "after": 78,
+     "delta": 9
+    },
+    "radiance": {
+     "before": 71,
+     "after": 94,
+     "delta": 23
+    },
+    "oiliness": {
+     "before": 69,
+     "after": 75,
+     "delta": 6
+    },
+    "age_spot": {
+     "before": 68,
+     "after": 90,
+     "delta": 22
+    }
+   },
+   "summary": {
+    "improved": 8,
+    "worse": 0,
+    "mean": 12.3
+   },
+   "changes": [],
+   "objective": 98
+  }
+ ],
+ "generic": {
+  "rx": {
+   "skin": "#bd9d86",
+   "concealerShade": "#c4a792",
+   "levers": {
+    "smooth": 50,
+    "coverage": 50,
+    "glow": 20,
+    "underEye": 50
+   },
+   "finish": "generic preset",
+   "reasons": []
+  },
+  "image": "cache/maya/render1.jpg",
+  "scores": {
+   "oiliness": {
+    "ui_score": 77,
+    "raw_score": 72.74528503417969
+   },
+   "redness": {
+    "ui_score": 66,
+    "raw_score": 47.66606521606445
+   },
+   "pore": {
+    "ui_score": 81,
+    "raw_score": 81.45675253868103
+   },
+   "texture": {
+    "ui_score": 93,
+    "raw_score": 95.88730931282043
+   },
+   "acne": {
+    "ui_score": 81,
+    "raw_score": 81.70944
+   },
+   "radiance": {
+    "ui_score": 93,
+    "raw_score": 95.63291072845459
+   },
+   "dark_circle_v2": {
+    "ui_score": 73,
+    "raw_score": 72.36011922359467
+   },
+   "age_spot": {
+    "ui_score": 88,
+    "raw_score": 94.41169738769531
+   }
+  },
+  "deltas": {
+   "redness": {
+    "before": 62,
+    "after": 66,
+    "delta": 4
+   },
+   "acne": {
+    "before": 77,
+    "after": 81,
+    "delta": 4
+   },
+   "dark_circle_v2": {
+    "before": 68,
+    "after": 73,
+    "delta": 5
+   },
+   "texture": {
+    "before": 68,
+    "after": 93,
+    "delta": 25
+   },
+   "pore": {
+    "before": 69,
+    "after": 81,
+    "delta": 12
+   },
+   "radiance": {
+    "before": 71,
+    "after": 93,
+    "delta": 22
+   },
+   "oiliness": {
+    "before": 69,
+    "after": 77,
+    "delta": 8
+   },
+   "age_spot": {
+    "before": 68,
+    "after": 88,
+    "delta": 20
+   }
+  },
+  "summary": {
+   "improved": 8,
+   "worse": 0,
+   "mean": 12.5
+  },
+  "objective": 100
+ },
+ "calls": [
+  {
+   "task": "tryOn",
+   "units": 1
+  },
+  {
+   "task": "analyze",
+   "units": 12
+  },
+  {
+   "task": "tryOn",
+   "units": 1
+  },
+  {
+   "task": "analyze",
+   "units": 12
+  }
+ ],
+ "units": 26,
+ "chosen": 1
+}

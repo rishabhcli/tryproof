@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>TryProof: a virtual try-on that checks itself against your skin</title>
+  <meta name="description" content="Skin AI reads your skin, sets the virtual makeup, then re-scores the rendered result. Built on the YouCam API.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="top">
+    <div class="brand"><span class="mark" aria-hidden="true"></span><b>TryProof</b></div>
+    <nav class="modes" role="tablist" aria-label="Mode">
+      <button role="tab" id="tab-demo" aria-selected="true">Recorded demo</button>
+      <button role="tab" id="tab-live" aria-selected="false">Live, your key</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>A try-on that checks itself against your skin.</h1>
+      <p>Skin AI reads the face and sets the virtual makeup. Then it scores the rendered result again. If a setting makes a concern look worse, TryProof backs it off before you buy anything.</p>
+      <ol class="how">
+        <li><b>Read</b><span>Skin Analysis scores 8 concerns, Color Tones finds the shade.</span></li>
+        <li><b>Prescribe</b><span>Scores set the Makeup Try-On: smoothing, coverage, glow, under-eye.</span></li>
+        <li><b>Prove</b><span>Skin Analysis scores the render. Worse? It backs off and re-renders.</span></li>
+      </ol>
+    </section>
+
+    <section id="demo-panel" class="card">
+      <h2>Pick a face</h2>
+      <p class="muted">Three AI-generated faces, not real people. Every number below is a real YouCam API response recorded on 30 Oct 2026.</p>
+      <div id="faces" class="faces" role="list"></div>
+    </section>
+
+    <section id="live-panel" class="card" hidden>
+      <h2>Run it on your own selfie</h2>
+      <p class="muted">Uses your own YouCam API key (about 45 to 70 units per run). The key stays in this tab, goes only to the proxy for each request and is never stored. Your photo is sent to YouCam to be analyzed and is not kept by this site.</p>
+      <label class="field">YouCam API key
+        <input id="key" type="password" autocomplete="off" placeholder="sk-..." spellcheck="false">
+      </label>
+      <label class="field">Front-facing selfie, hair off the face, even light
+        <input id="photo" type="file" accept="image/jpeg,image/png">
+      </label>
+      <button id="run-live" class="primary" disabled>Run TryProof</button>
+      <div id="live-note" class="muted" role="status"></div>
+    </section>
+
+    <section id="progress" class="card" hidden aria-live="polite">
+      <h2 id="progress-title">Working</h2>
+      <ol id="steps" class="steps"></ol>
+    </section>
+
+    <div id="result" hidden>
+      <section class="card" id="c-read"></section>
+      <section class="card" id="c-rx"></section>
+      <section class="card" id="c-proof"></section>
+      <section class="card" id="c-shelf"></section>
+      <section class="card" id="c-hood"></section>
+    </div>
+  </main>
+
+  <footer>
+    <p>Built for the YouCam API Skin AI and eCommerce VTO Hackathon. Skin scores describe how the image reads to the Skin Analysis model. They are not medical advice and a rendered look is a simulation.</p>
+    <p><a href="https://github.com/rishabhcli/tryproof">Source (MIT)</a></p>
+  </footer>
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
