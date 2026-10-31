@@ -5,3 +5,7 @@ node_modules
 *.log
 .DS_Store
 data/probe/
+demo/raw/
+demo/*.mp4
+demo/*.webm
+demo/last-frame.png
