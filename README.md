@@ -2,7 +2,7 @@
 
 A virtual try-on that checks itself against your skin. Built on the YouCam API for the YouCam API Skin AI and eCommerce VTO Hackathon.
 
-**Live demo:** see the repository description. **Source license:** MIT.
+**Live demo:** https://tryproof-sepia2.vercel.app (demo mode works with no key; live mode takes your own YouCam key). **Source license:** MIT.
 
 ## The idea
 
