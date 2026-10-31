@@ -1,14 +1,14 @@
 {
- "offset": 0.763,
- "p1": 0.191,
- "p2": 11.05,
- "p3": 21.49,
- "p4": 31.373,
- "p5": 52.357,
- "p6": 56.077,
- "liveStart": 59.308,
- "liveDone": 59.339,
+ "offset": 1.056,
+ "p1": 0.004,
+ "p2": 10.864,
+ "p3": 21.305,
+ "p4": 31.187,
+ "p5": 52.168,
+ "p6": 55.874,
+ "liveStart": 59.098,
+ "liveDone": 107.13,
  "liveOk": true,
- "end": 68.844,
- "video": "/Users/m3-max/Documents/GitHub/tryproof/demo/raw/page@2ad087e9421d8bfdb6fd03acb34153a8.webm"
+ "end": 116.392,
+ "video": "/Users/m3-max/Documents/GitHub/tryproof/demo/raw/page@3ba85e2b5df7fd8aa53294c127b257be.webm"
 }
