@@ -11,6 +11,7 @@ const el = (tag, attrs = {}, ...kids) => {
   for (const k of kids.flat()) if (k != null) n.append(k.nodeType ? k : document.createTextNode(k));
   return n;
 };
+const fill = (n, ...kids) => n.replaceChildren(...kids.flat(Infinity).filter((k) => k != null && k !== false));
 const FACES = ['maya', 'dev', 'rosa'];
 const cache = {};
 
@@ -93,7 +94,7 @@ function render(r, { base }) {
     barsBox.replaceChildren(bars(r.before.scores, { pressed: sel, onPick: (k) => { sel = sel === k ? null : k; draw(); const m = sel && maskFor(sel); photoBox.firstChild.src = m || beforeSrc; } }));
   };
   draw();
-  $('#c-read').replaceChildren(
+  fill($('#c-read'), 
     el('h2', {}, '1. Skin read'),
     el('p', { class: 'muted' }, 'Skin Analysis scores each concern from 0 to 100, where higher means clearer. Tap a row to see where the model found it.'),
     el('div', { class: 'read' }, photoBox, barsBox));
@@ -101,7 +102,7 @@ function render(r, { base }) {
   // 2. prescription
   const rx = r.rx0;
   const lever = (k) => el('div', { class: 'lever' }, el('span', {}, LEVERS[k].label), el('span', { class: 'track' }, el('span', { class: 'fill', style: `width:${rx.levers[k]}%;display:block` })), el('span', { class: 'num' }, String(rx.levers[k])));
-  $('#c-rx').replaceChildren(
+  fill($('#c-rx'), 
     el('h2', {}, '2. Prescription'),
     el('p', { class: 'muted' }, 'A plain rules engine turns the scores into the settings sent to Makeup Virtual Try-On.'),
     el('p', {}, el('span', { class: 'swatch', style: `background:${rx.skin}` }), `Shade from Facial Color Tones: ${rx.skin}`),
@@ -135,7 +136,7 @@ function render(r, { base }) {
   if (notes.length) callouts.push(el('div', { class: 'callout warn' }, el('b', {}, 'Verifier caught something. '), notes.join(' '), r.rounds.length > 1 ? ` TryProof rendered again and kept round ${r.chosen}, the better of the two by score.` : ''));
   else callouts.push(el('div', { class: 'callout ok' }, el('b', {}, 'Verifier passed. '), 'No setting made a concern read worse, so the first render was kept.'));
   if (r.generic) callouts.push(el('p', { class: 'muted' }, `For comparison, the same one-size preset on this face changed the scores by ${r.generic.summary.mean >= 0 ? '+' : ''}${r.generic.summary.mean} on average, against ${sum.mean >= 0 ? '+' : ''}${sum.mean} for the prescribed look. Averages are close. The difference TryProof makes is that every look is scored against this skin and checked for regressions before it is shown.`));
-  $('#c-proof').replaceChildren(
+  fill($('#c-proof'), 
     el('h2', {}, '3. Try-on, scored again'),
     el('p', { class: 'muted' }, 'Drag the photo to compare. The scores come from running Skin Analysis on the rendered image, so they describe how the render reads to the model, not a clinical result.'),
     tabsBox, stage, tableBox, ...callouts,
@@ -144,7 +145,7 @@ function render(r, { base }) {
   // 4. shelf
   const L = chosen.rx.levers;
   const item = (title, text) => el('div', { class: 'item' }, el('b', {}, title), el('span', {}, text));
-  $('#c-shelf').replaceChildren(
+  fill($('#c-shelf'), 
     el('h2', {}, '4. What to shop for'),
     el('p', { class: 'muted' }, 'The verified settings written as a product spec a shopper or counter assistant can use. No brands are implied.'),
     el('div', { class: 'shelf' },
@@ -154,7 +155,7 @@ function render(r, { base }) {
 
   // 5. under the hood
   const tally = {}; for (const c of r.calls) tally[c.task] = (tally[c.task] || 0) + 1;
-  $('#c-hood').replaceChildren(
+  fill($('#c-hood'), 
     el('h2', {}, 'Under the hood'),
     el('p', { class: 'muted' }, `${r.calls.length} YouCam API tasks, about ${r.units} units for this face.`),
     el('ul', { class: 'calls' },

@@ -1,0 +1,8 @@
+[
+"Most virtual try-on tools render a look and stop. TryProof treats the render as a claim and checks it against your skin. It is a mobile-first web app built on three YouCam APIs.",
+"Skin Analysis scores eight concerns, like redness, texture and dark circles, and Facial Color Tones finds the shade. This is Dev, an AI-generated sample face.",
+"A small rules engine turns those scores into settings for Makeup Virtual Try-On: smoothing, foundation coverage and glow, and under-eye concealer, each with its reason.",
+"Then the rendered image goes back through Skin Analysis, so every concern gets a before and after score. On this face the first render made pores read worse, so TryProof backed the smoothing off, rendered again, and kept the better round. A one-size preset is shown for comparison. The averages are close, so the value is the check, not a bigger number.",
+"The verified settings become a product spec a shopper can use.",
+"Live mode runs your own selfie with your own key. Here is a real run, sped up: upload, skin read, try-on, re-score, verdict. Scores describe how the image reads to the model, not a medical result."
+]
