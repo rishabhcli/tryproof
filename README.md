@@ -32,9 +32,9 @@ Cost for one face is about 45 to 70 units (12 per Skin Analysis, 20 for Color To
 
 The demo uses three AI-generated faces, not real people, with real API responses recorded on 30 Oct 2026 in `public/cache/`. Honest summary of those runs:
 
-- Skin Analysis scores moved on every face after the try-on. The prescribed look improved 6 or 7 of the 8 concerns on each face.
+- Skin Analysis scores moved after the try-on on every face. The kept prescribed look improved 8 of 8 concerns on Maya and Rosa and 6 of 8 on Dev (one unchanged, one worse).
 - The prescribed look and the one-size-fits-all preset score about the same on average. TryProof does not claim that prescription beats a good preset on score. What it adds is a per-skin check and the ability to catch regressions.
-- On the Dev sample, the first render made pores read worse (75 to 63). TryProof backed the smoothing setting off, re-rendered and kept the better round.
+- On the Dev sample, the first render made pores read worse (75 to 63). TryProof backed the smoothing setting off and re-rendered. Pores then read 69, still below the starting 75, but the second round scored better overall, so it was kept. The regression is shown, not hidden.
 - Scores describe how the rendered image reads to the Skin Analysis model. They are not medical advice, and a rendered look is a simulation.
 
 ## Run it
